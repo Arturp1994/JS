@@ -9,15 +9,12 @@
 <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
 <script>
-    var leftOffset = 0;
-    var moveHeading = function () {
-        $("#heading").offset({ left: leftOffset });
-        leftOffset++;
-        if (leftOffset > 600) {
-            leftOffset = 0;
-        }
-    };
-setInterval(moveHeading, 50);
+    $("html").mousemove(function (event) {
+    $("#heading").offset({
+            left: event.pageX,
+            top: event.pageY
+        });
+    });
 
 </script>
 </body>

@@ -9,15 +9,10 @@
 <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
 <script>
-    var leftOffset = 0;
-    var moveHeading = function () {
-        $("#heading").offset({ left: leftOffset });
-        leftOffset++;
-        if (leftOffset > 600) {
-            leftOffset = 0;
-        }
+    var clickHandler = function () {
+    console.log("Hello");
     };
-setInterval(moveHeading, 50);
+    $("h1").click(clickHandler);
 
 </script>
 </body>
