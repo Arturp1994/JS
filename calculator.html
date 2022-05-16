@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="clct.css" rel="stylesheet" type="text/css">
+    <script src="clct.js"></script>
+</head>
+<body>
+    <div class="art-calculator" id='artur'>grgrgrgr
+        <div class ="operations-block">
+            <button id="plus" class = "hello">+</button>
+            <button id="minus" class = "hello">-fsw</button>
+            <button id="multiply">*</button>
+            <button id="devide">/</button>
+        </div>
+        <hr> <!-- сепаратор-->
+        <div class ='inputs-block'>
+            <div class ='input-block'>
+                <label>Number 1</label>
+                <input type="number">
+            </div>
+            <div class ='input-block'>
+                <label>Number 2</label>
+                <input type="number">
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>\
+let buttonplus = document.getElementById('plus');
+let buttonminus = document.getElementById('minus');
+let buttonmultiply = document.getElementById('multiply');
+let buttondevide = document.getElementById('devide');
+let a = document.getElementById('artur');
+
+function onButtonPlusClick(){
+console.log('onButtonPlusClick');
+}
+function onButtonMinusClick(){
+console.log('onButtonMinusClick');
+}
+function onButtonMultiplylick(){
+console.log('onButtonMultiplylick');
+}
+function onButtonDevideClick(){
+console.log('onButtonDevideClick');
+}
+
+console.log(2+2);
+console.log(a.className);
+
+buttonminus.addEventListener('click', onButtonMinusClick );
+buttonmultiply.addEventListener('click', onButtonMultiplylick );
+buttondevide.addEventListener('click', onButtonDevideClick );
+</script>
+</html>
