@@ -49,62 +49,72 @@
 // const deepCopy5 = students.map(student => {
 //   return {...students}
 // })
+//
+// console.log(2+2)
+//
+//
+// //////2 ЗАНЯТИЕ
+//
+// const students = [
+//     {
+//         name: "Bob",
+//         age: 22,
+//         isMarried: true,
+//         scores: 85,
+//     },
+//     {
+//         name: "Alex",
+//         age: 21,
+//         isMarried: true,
+//         scores: 89,
+//     },
+//     {
+//         name: "Nick",
+//         age: 20,
+//         isMarried: false,
+//         scores: 128,
+//     },
+// ]
+//
+// const addScores = (arr) => {
+//     const result =[]
+//     const func = (st) => ({...st, scores: st.scores +10})
+//     for (let i = 0; i < arr.length; i++) {
+//         const newValue = func(arr[i])
+//         result.push(newValue)
+//     }
+//     return result
+// }
+//
+// const addPropsStudent = (arr) => {
+//     const result =[]
+//     const func = (st) => ({...st, isStudent: true})
+//     for (let i = 0; i < arr.length; i++) {
+//         const newValue = func(arr[i])
+//         result.push(newValue)
+//     }
+//     return result
+// }
+//
+// const getMappedArray = (arr, func) => {
+//     const result = []
+//     for (let i = 0; i < arr.length; i++) {
+//         const newValue = func(arr[i])
+//         result.push(newValue)
+//     }
+//     return result
+// }
+// console.log(getMappedArray(students, (st) => st.name))
+// console.log(students.map((st)=>st.name))
+//
+// console.log(students.filter(st => st.scores > 100))
+//
 
-console.log(2+2)
+// 3 занятие
 
 
-//////2 ЗАНЯТИЕ
 
-const students = [
-    {
-        name: "Bob",
-        age: 22,
-        isMarried: true,
-        scores: 85,
-    },
-    {
-        name: "Alex",
-        age: 21,
-        isMarried: true,
-        scores: 89,
-    },
-    {
-        name: "Nick",
-        age: 20,
-        isMarried: false,
-        scores: 128,
-    },
-]
 
-const addScores = (arr) => {
-    const result =[]
-    const func = (st) => ({...st, scores: st.scores +10})
-    for (let i = 0; i < arr.length; i++) {
-        const newValue = func(arr[i])
-        result.push(newValue)
-    }
-    return result
-}
 
-const addPropsStudent = (arr) => {
-    const result =[]
-    const func = (st) => ({...st, isStudent: true})
-    for (let i = 0; i < arr.length; i++) {
-        const newValue = func(arr[i])
-        result.push(newValue)
-    }
-    return result
-}
 
-const getMappedArray = (arr, func) => {
-    const result = []
-    for (let i = 0; i < arr.length; i++) {
-        const newValue = func(arr[i])
-        result.push(newValue)
-    }
-    return result
-}
-console.log(getMappedArray(students, (st) => st.name))
-console.log(students.map((st)=>st.name))
 
-console.log(students.filter(st => st.scores > 100))
