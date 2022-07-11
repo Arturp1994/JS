@@ -80,3 +80,64 @@ const isIncludes = (string, str)=>{
 }
 
 console.log(isIncludes("Incubator", "Cut"))
+
+
+function rakeGarden(x) {
+    let s = x.split(' ')
+    let newArray = []
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === 'gravel') {
+            newArray.push('gravel')
+        }
+         else if (s[i] === 'rock') {
+            newArray.push('rock')
+        }
+        else newArray.push('gravel')
+    }
+        return newArray
+}
+
+garden = 'slug spider rock gravel gravel gravel gravel gravel gravel gravel'
+console.log(rakeGarden(garden))
+
+function rakeGarden(garden) {
+    let s = garden.split('')
+    let newArray = []
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === 'gravel') {
+            newArray.push('gravel')
+        }
+        else if (s[i] === 'rock') {
+            newArray.push('rock')
+        }
+        else newArray.push('gravel')
+    }
+    return newArray
+}
+
+function vaporcode(string) {
+    let newArray = []
+    let a = string.toUpperCase().split('')
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== " ") {
+            newArray.push(" " + a[i] + " ")
+        } else newArray.push("")
+    }
+    let b = newArray.join('')
+    return b.trim()
+}
+
+console.log(vaporcode("Why isn't my code working?"))
+
+
+function gimme (triplet) {
+    let newArray = [...triplet].sort(( a, b )=> a > b ? 1: -1)
+    let win = newArray[1]
+    for (let i = 0; i < triplet.length; i++) {
+        if (win === triplet[i]){
+            return i
+        }
+    }
+}
+
+console.log(gimme([5,1,10]))
