@@ -141,3 +141,45 @@ function gimme (triplet) {
 }
 
 console.log(gimme([5,1,10]))
+
+const divisions = (n, divisor) => {
+    let Value = 0
+    if (n > divisor){
+        for (let i = divisor; i < n;) {
+            n = n / divisor
+            Value+=1
+        }
+    } else if (n === divisor){
+        return 0
+    } else if (n < divisor){
+        return 1
+    }
+return Value
+};
+
+function divCon(x){
+    let N =0
+    let Str=0
+    for (let i = 0; i < x.length; i++) {
+        if (typeof x[i] == "number"){
+            N += x[i]
+        } else {
+            Str += Number(x[i])
+        }
+    }
+    return N-Str
+}
+
+let s =2
+let d = 'Hello'
+console.log(typeof s == "number")
+console.log(typeof d == "string")
+console.log(typeof d == "number")
+
+// divCon(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 14)
+
+function factory(x){
+    var myArray = [1, 2, 3]
+
+return myArray.map(s=>s*5)
+}
