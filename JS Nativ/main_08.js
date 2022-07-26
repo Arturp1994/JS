@@ -23,3 +23,10 @@ const pow = (x, y)=>{
 }
 
 pow(2,3)
+
+//факториал через рекурсию
+
+const Factorial = (x)=>{
+    return (x===1)? x : x * Factorial(x-1)
+}
+console.log(Factorial(3))//120
